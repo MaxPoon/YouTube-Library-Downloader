@@ -2,7 +2,6 @@ import requests
 import threading
 from pytube import YouTube
 from bs4 import BeautifulSoup
-from pprint import pprint
 
 def download(url, resolution, path):
 	try:
