@@ -14,6 +14,7 @@ def download(url, resolution, path):
 					resolution = r
 					break
 		video = yt.get('mp4', resolution)
+		print("downloading ", yt.filename)
 		video.download(path)
 	except:
 		download(url, resolution, path)
