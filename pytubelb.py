@@ -16,7 +16,7 @@ def download(url, resolution, path):
 		video = yt.get('mp4', resolution)
 		video.download(path)
 	except:
-		print("Failed to download ",url)
+		download(url, resolution, path)
 
 #get user input
 resolutions = ['720p', '480p', '360p', '240p', '144p']
