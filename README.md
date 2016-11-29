@@ -10,7 +10,7 @@ You may encounter the situation where you need to download all the videos in a Y
 ## Parameters
 URL: The url of the YouTube video library you want to download.
 
-Resolution: The resolution of the video you prefer, 480 by default. In the case that the resolution you choose is not available, it will download the video of the highest available resolution.
+Resolution: The prefered resolution of the video, 480 by default. In the case that the resolution you choose is not available, it will download the video of the highest available resolution.
 
 Maximum number of simultaneous downloads: 5 by default
 
