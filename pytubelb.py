@@ -57,6 +57,7 @@ for tag in tags:
 
 count = 1
 numOfVideos = len(video_urls)
+print("Started downloading ", numOfVideos, " videos")
 while len(video_urls):
 	if threading.active_count() >= maxThreads+1: continue
 	newURL = video_urls.pop(0)
