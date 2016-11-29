@@ -10,7 +10,7 @@ def download(url, resolution, path, addOrder, n, numOfVideos):
 		downloaded = listdir(path)
 		resolutions = ['720p', '480p', '360p', '240p', '144p']
 		yt = YouTube(url)
-		if yt.filename + '.mp4' in downloaded: return
+		if (yt.filename + '.mp4') in downloaded: return False
 		if len(yt.filter('mp4', resolution=resolution)) == 0:
 			resolutions.remove(resolution)
 			for r in resolutions:
@@ -22,7 +22,7 @@ def download(url, resolution, path, addOrder, n, numOfVideos):
 			prefix = str(n)
 			prefix = "0"*(length - len(str(n))) + prefix +'. '
 			yt.set_filename(prefix + yt.filename)
-			if prefix + yt.filename + '.mp4' in downloaded: return
+			if (prefix + yt.filename + '.mp4') in downloaded: return False
 		video = yt.get('mp4', resolution)
 		print("downloading ", yt.filename, resolution)
 		video.download(path)
