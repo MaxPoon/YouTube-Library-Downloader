@@ -22,6 +22,7 @@ def download(url, resolution, path, addOrder, n, numOfVideos):
 			prefix = str(n)
 			prefix = "0"*(length - len(str(n))) + prefix +'. '
 			yt.set_filename(prefix + yt.filename)
+			if prefix + yt.filename + '.mp4' in downloaded: return
 		video = yt.get('mp4', resolution)
 		print("downloading ", yt.filename, resolution)
 		video.download(path)
