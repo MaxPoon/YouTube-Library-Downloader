@@ -48,7 +48,7 @@ tags = soup.find_all('a')
 video_urls = []
 for tag in tags:
 	video_url = tag.get('href', None)
-	if video_url and video_url.find('/watch?')==0: 
+	if video_url and video_url.find('/watch?')==0 and video_url.find('&index=')>0: 
 		index = video_url.find('&list=')
 		video_url = video_url[:index]
 		video_url = 'https://www.youtube.com'+video_url
