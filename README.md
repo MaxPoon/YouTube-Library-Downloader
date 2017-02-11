@@ -5,7 +5,9 @@ A python tool to download all the videos from a YouTube library.
 You may encounter the situation where you need to download all the videos in a YouTube library. This YouTube library downlowder allows you to do it easily.
 
 ## Usage
-	python pytubelb.py
+```bash
+python pytubelb.py
+```
 	
 ## Parameters
 URL: The url of the YouTube video library you want to download.
