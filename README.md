@@ -1,5 +1,5 @@
 # YouTube-Library-Downloader
-A python tool to download all the videos from a YouTube library.
+A python(3.x) tool to download all the videos from a YouTube library.
 
 ## Description
 You may encounter the situation where you need to download all the videos in a YouTube library. This YouTube library downlowder allows you to do it easily.
